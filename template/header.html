@@ -1,0 +1,17 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content drop-list">
+    {%for c in cat%}
+      <li><a href="/blog/category/{{c.url}}" id="drop-text">{{c.title}}</a></li>
+     {%endfor%}
+    </ul>
+    <nav id="bg-nav">
+      <div class="nav-wrapper" id="text-nav">
+        <a href="/blog" class="brand-logo" style="color:#007000;"> INFORMATION & COLLABORATION BLOG </a>
+        <ul class="right hide-on-med-and-down" >
+          <li><a href="/admin" style="color:#007000;"> Admin</a></li>
+          <!-- <li><a href="badges.html">Category</a></li> -->
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!"  style="color:#007000;" data-target="dropdown1">Category<i class="material-icons right" >arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
